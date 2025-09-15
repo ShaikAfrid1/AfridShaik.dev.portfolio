@@ -12,11 +12,11 @@ export const HeroSection = () => {
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
-              Pedro
+              Afrid
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Machado
+              Shaik
             </span>
           </h1>
 
@@ -27,7 +27,11 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <a
+              href="https://github.com/ShaikAfrid1?tab=repositories"
+              target="_blank"
+              className="cosmic-button"
+            >
               View My Work
             </a>
           </div>

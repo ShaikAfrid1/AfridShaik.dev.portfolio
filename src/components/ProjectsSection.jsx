@@ -3,32 +3,33 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Luxora — Modern eCommerce Web App",
+    description:
+      "Luxora is a sleek, responsive, and modern e-commerce frontend built with React, Redux, and Tailwind CSS. Focused on clean UX, seamless cart management, and real-time product rendering using json-server as a mock backend.",
+    image: "/projects/Project11.png",
+    tags: ["React", "JavaScript", "TailwindCSS", "Supabase"],
+    demoUrl: "https://luxxora.netlify.app/",
+    githubUrl: "https://github.com/ShaikAfrid1/Luxora_Ecommerce_Website",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "GTA 6 - Landing Page ",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "🚀 A stunning GTA 6 promo website clone built with React + TailwindCSS + Gsap",
+    image: "/projects/Project22.png",
+    tags: ["JavaScript", "React.js", "Gsap", "TailwindCSS"],
+    demoUrl: "https://gta6clone.netlify.app/",
+    githubUrl: "https://github.com/ShaikAfrid1/GTA-6-Website",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "TastyBytes",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "🍽️ A delicious frontend recipe web app to browse, cook, and enjoy tasty dishes. Built with HTML, CSS & JavaScript. Deployed on Netlify. Bon Appétit! 😋",
+    image: "/projects/Project33.png",
+    tags: ["React", "JavaScript", "TailwindCSS"],
+    demoUrl: "https://tastybuytes.netlify.app/",
+    githubUrl: "https://github.com/ShaikAfrid1/TastyBytes",
   },
 ];
 
@@ -63,7 +64,10 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -100,7 +104,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/ShaikAfrid1"
           >
             Check My Github <ArrowRight size={16} />
           </a>

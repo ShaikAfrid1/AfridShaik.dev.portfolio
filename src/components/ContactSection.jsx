@@ -27,6 +27,7 @@ export const ContactSection = () => {
         description: "Thank you for your message. I'll get back to you soon.",
       });
       setIsSubmitting(false);
+      e.target.reset();
     }, 1500);
   };
   return (
@@ -59,7 +60,7 @@ export const ContactSection = () => {
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    shaikafrid500@gmail.com
                   </a>
                 </div>
               </div>
@@ -73,7 +74,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +919700016599
                   </a>
                 </div>
               </div>
@@ -84,7 +85,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Hyderabad, India.
                   </a>
                 </div>
               </div>
@@ -93,13 +94,19 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/afrid-shaik-7169521a0/"
+                  target="_blank"
+                >
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://x.com/afrid_awesome" target="_blank">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.instagram.com/afrid_awesome/"
+                  target="_blank"
+                >
                   <Instagram />
                 </a>
                 <a href="#" target="_blank">
@@ -130,7 +137,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Afrid Shaik..."
                 />
               </div>
 
@@ -148,7 +155,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="example@gmail.com"
                 />
               </div>
 
